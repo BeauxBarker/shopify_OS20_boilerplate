@@ -290,7 +290,7 @@ const material1 = new THREE.MeshStandardMaterial({
 // Load the model
 const objloader = new OBJLoader();
 objloader.load(
-  'assets/painting.obj',
+  "{{ 'painting.obj' | asset_url }}",
   (object) => {
     object.children[0].material = material1;
     object.scale.setScalar(1);

@@ -1,18 +1,21 @@
 <style>
+
   .featured-collection {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     border: 3px solid #ccc; /* Border around the entire grid */
     padding: 20px;
-    margin: 0 auto; /* Center the grid horizontally */
   }
 
   .product-card {
+    flex: 0 0 calc(33.3333% - 20px); /* Adjust the width as needed, considering the gap */
     border: 3px solid #ddd; /* Border around each product card */
     padding: 10px;
     text-align: left;
     border-radius: 1rem;
+    box-sizing: border-box;
   }
 
   .product-card img {
@@ -20,7 +23,6 @@
     max-width: 100%; /* Ensure images don't exceed their container width */
     height: auto; /* Maintain aspect ratio */
   }
-
 </style>
 
 <h1>{{ section.settings.title }}</h1>

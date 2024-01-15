@@ -1,11 +1,11 @@
 <style>
-  /* Custom CSS for Featured Collection Grid */
   .featured-collection {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     border: 3px solid #ccc; /* Border around the entire grid */
     padding: 20px;
+    margin: 0 auto; /* Center the grid horizontally */
   }
 
   .product-card {
@@ -14,7 +14,8 @@
     text-align: left;
     border-radius: 1rem;
   }
-    .product-card img {
+
+  .product-card img {
     border-radius: 1rem; /* Border-radius for product images */
     max-width: 100%; /* Ensure images don't exceed their container width */
     height: auto; /* Maintain aspect ratio */
